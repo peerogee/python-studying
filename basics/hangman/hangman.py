@@ -37,9 +37,11 @@ while not isGameOver:
             os.system('cls')
             print(f"YOU WIN, GRATZ!")
             secretString = ''.join(secret)
-            print(f"Secret word is: {secretString}.")    
+            print(f"Secret word is: {secretString}.")   
+            print('Press Enter to close program...') 
             break
     else:
         os.system('cls')
         print('GAME OVER')
+        print('Press Enter to close program...')
         isGameOver = True
