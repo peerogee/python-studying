@@ -11,7 +11,7 @@ while not isGameOver:
     if life > 0:
         if '*' in secret:
             secretString = ''.join(secret)
-            print(f"Secret word is: {secretString}. \nYou have {life} left.")
+            print(f"Secret word is: {secretString}. \nYou have {life} left. Keep in mind that the first letter is capitalized.")
             guess = input("Type some letter to guess or type 'quit' to quit program: ")
             if guess in letterList and guess != '':
                 if guess in word and guess not in secret:
