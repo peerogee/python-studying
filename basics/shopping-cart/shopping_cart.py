@@ -12,9 +12,12 @@ def add():
 
 def remove():
     os.system('cls')
-    name = input("Please, type name of the product which you want to remove from your shopping cart: ")    
-    cart.remove(name)
-    print(f"{name} has been removed from your shopping cart")
+    name = input("Please, type name of the product which you want to remove from your shopping cart: ") 
+    try:   
+        cart.remove(name)
+        print(f"{name} has been removed from your shopping cart")
+    except:
+        print("For some reason we can't remove this good. Probably it's not in your shopping cart")
     input('Press Enter to return to the command menu...')
 
 def clear():
